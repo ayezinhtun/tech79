@@ -1,0 +1,88 @@
+.btn.btn1 {
+  border: 1px solid #06f917;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.btn.btn1:hover {
+  background-color: #06f917;
+  color: white;
+}
+
+.btn.btn2{
+    background-color: #06f917;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.btn.btn2:hover{
+    border: 1px solid #06f917;
+}
+
+.BlueColor{
+    color: #1d70b7;
+}
+
+.secondColor{
+    color: #7a8ca0;
+}
+
+.custom-gradient {
+  background: linear-gradient(to bottom right, #f7f9fb, #ffffff);
+}
+
+.bgCustom {
+  background-color: rgba(33, 112, 183, 0.1);
+}
+
+.custom-hover-card {
+  border: 0; /* border-0 */
+  background-color: rgba(255, 255, 255, 0.8); /* bg-card/80 */
+  backdrop-filter: blur(10px); /* backdrop-blur-sm */
+  transition: all 0.3s ease; /* transition-all duration-300 */
+}
+
+.custom-hover-card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); /* hover:shadow-lg */
+}
+
+.bgPrimary10 {
+  background-color: rgba(33, 112, 183, 0.1);
+}
+
+.hover-dark:hover {
+  color: #212529 !important; 
+}
+
+.custom-hover-card2 {
+  transition: box-shadow 0.3s ease;
+  overflow: hidden; /* prevents image overflow when scaling */
+}
+
+.custom-hover-card2 img {
+  transition: transform 0.3s ease;
+}
+
+.custom-hover-card2:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* shadow on card */
+}
+
+.custom-hover-card2:hover img {
+  transform: scale(1.02); /* only image zooms */
+}
+
+.custom-hover-card3:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.form-control::placeholder {
+  color: #7a8ca0 !important;
+  opacity: 0.6 !important;
+}
+
+
+
+
+
