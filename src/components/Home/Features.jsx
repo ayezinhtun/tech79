@@ -38,7 +38,7 @@ function Features() {
   return (
     <div className='py-5 container-fluid'>
           <div className='text-center mb-5'>
-            <h1 className='fw-bold'>Why Choose Tech47?</h1>
+            <h1 className='fw-bold'>Why Choose Tech79-Solutions?</h1>
             <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
                 Experience the difference with our proven expertise and commitment to <br />
                 excellence

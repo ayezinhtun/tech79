@@ -13,7 +13,7 @@ function Contact() {
             </div>
 
             
-        <div className="container">
+        <div className="container-fluid px-5">
           <div className="row g-4 justify-content-center align-items-stretch">
             {/* Contact Form */}
             <div className="col-lg-6 d-flex">
@@ -98,8 +98,9 @@ function Contact() {
                     </div>
                     <div>
                       <h5 className="mb-1">Phone Support</h5>
-                      <p className="mb-0 secondColor">+1 (555) 123-4567</p>
-                      <small className="secondColor">Available 24/7 for emergencies</small>
+                      <p className="mb-0 secondColor">09-780407008</p>
+                       <p className="mb-0 secondColor">09-971260043 </p>
+                      
                     </div>
                   </div>
 
@@ -111,8 +112,9 @@ function Contact() {
                     </div>
                     <div>
                       <h5 className="mb-1">Email Support</h5>
-                      <p className="mb-0 secondColor">support@techvault.com</p>
-                      <small className="secondColor">Response within 2 hours</small>
+                      <p className="mb-0 secondColor">mgmgthantxin@gmail.com</p>
+                      <p className="mb-0 secondColor">sungehtwe@gmail.com</p>
+
                     </div>
                   </div>
 
@@ -125,12 +127,12 @@ function Contact() {
                     <div>
                       <h5 className="mb-1">Office Location</h5>
                       <p className="mb-0 secondColor">
-                        123 Tech Street <br /> Digital City, DC 12345
-                      </p>
+                         149(5-B), 48th Street Botatuang Township, Yangon, Myanmar. 
+                       </p>
                     </div>
                   </div>
 
-                  <div className="d-flex align-items-start">
+                  {/* <div className="d-flex align-items-start">
                     <div className="me-3">
                       <div className="bgCustom p-3 rounded">
                         <Clock/>
@@ -144,7 +146,7 @@ function Contact() {
                         Sunday: Emergency support only
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
              

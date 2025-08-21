@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function CallToAction() {
   return (
@@ -13,10 +14,10 @@ function CallToAction() {
         </p>
 
         <div className="btngroup">
-            <a to="" className='btn btn2' style={{ fontSize: '18px' }}>Start Free Consultation
+            <Link to="/contact" className='btn btn2' style={{ fontSize: '18px' }}>Start Free Consultation
                  <ArrowRight className='ms-2' size={20}/>
-             </a>
-            <a to="" className='btn btn-outline-primary ms-4' style={{ fontSize: '18px' }}>View Our Services</a>
+             </Link>
+            <Link to="/services" className='btn btn-outline-primary ms-4' style={{ fontSize: '18px' }}>View Our Services</Link>
 
         </div>
     </div>

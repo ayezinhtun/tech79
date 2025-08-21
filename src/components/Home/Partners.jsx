@@ -7,38 +7,38 @@ import React from 'react'
     { number: "100%", label: "Certified Technicians" }
   ];
 
-    const certifications = [
-    {
-      icon: Award,
-      title: "Microsoft Certified",
-      description: "Gold Partner status with expertise in Azure, Microsoft 365, and Windows Server solutions."
-    },
-    {
-      icon: Shield,
-      title: "CompTIA Certified",
-      description: "Security+, Network+, and A+ certified technicians ensuring industry-standard expertise."
-    },
-    {
-      icon: Shield,
-      title: "AWS Partner",
-      description: "Certified AWS solutions architect with proven cloud migration and management experience."
-    },
-    {
-      icon: Cpu,
-      title: "Intel Technology",
-      description: "Intel Technology Provider with access to latest hardware solutions and support."
-    },
-    {
-      icon: Database,
-      title: "VMware Certified",
-      description: "Virtualization experts certified in VMware vSphere and cloud infrastructure."
-    },
-    {
-      icon: Network,
-      title: "Cisco Partners",
-      description: "Cisco certified networking professionals for enterprise-grade network solutions."
-    }
-  ];
+  //   const certifications = [
+  //   {
+  //     icon: Award,
+  //     title: "Microsoft Certified",
+  //     description: "Gold Partner status with expertise in Azure, Microsoft 365, and Windows Server solutions."
+  //   },
+  //   {
+  //     icon: Shield,
+  //     title: "CompTIA Certified",
+  //     description: "Security+, Network+, and A+ certified technicians ensuring industry-standard expertise."
+  //   },
+  //   {
+  //     icon: Shield,
+  //     title: "AWS Partner",
+  //     description: "Certified AWS solutions architect with proven cloud migration and management experience."
+  //   },
+  //   {
+  //     icon: Cpu,
+  //     title: "Intel Technology",
+  //     description: "Intel Technology Provider with access to latest hardware solutions and support."
+  //   },
+  //   {
+  //     icon: Database,
+  //     title: "VMware Certified",
+  //     description: "Virtualization experts certified in VMware vSphere and cloud infrastructure."
+  //   },
+  //   {
+  //     icon: Network,
+  //     title: "Cisco Partners",
+  //     description: "Cisco certified networking professionals for enterprise-grade network solutions."
+  //   }
+  // ];
 
 
 function Partners() {
@@ -65,7 +65,7 @@ function Partners() {
             })}
           </div>
 
-          <div className="row">
+          {/* <div className="row">
             {certifications.map((certification, index) => {
               const Icon = certification.icon; 
 
@@ -84,7 +84,7 @@ function Partners() {
             })}
           </div>
         
-        <p className='secondColor text-center mt-3'>Trusted by leading technology vendors and certified to deliver enterprise-grade solutions</p>
+        <p className='secondColor text-center mt-3'>Trusted by leading technology vendors and certified to deliver enterprise-grade solutions</p> */}
 
     </div>
   )

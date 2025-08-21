@@ -1,14 +1,15 @@
 import React from 'react'
 import { ArrowRight, Shield, Zap, Users } from 'lucide-react'
 import heroimage from '../../assets/img/hero-tech-support.jpg'
+import {Link} from 'react-router-dom'
 function Hero() {
   return (
    <div className='container-fluid d-flex align-items-center justify-content-center custom-gradient' style={{ height: '110vh' }}>
         <div className="row">
             <div className="col-lg-6 d-flex flex-column justify-content-between">
               <div>
-                <h1 className='fw-bold' style={{ fontSize: '3.5rem' }}>Expert <span className='BlueColor'>Tech Supprt</span> & <br />
-                    <span className='BlueColor'>IT Services</span>
+                <h1 className='fw-bold' style={{ fontSize: '3.5rem' }}>
+                    Your Trusted Partner in <span className='BlueColor'>Tech Support</span>
                  </h1>
                  <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
                     Reliable, professional IT support for businesses of all sizes. 
@@ -17,10 +18,10 @@ function Hero() {
                  </p>
 
                  <div className="btngroup">
-                  <a to="" className='btn btn2'>Get Started Today
+                  <Link to="/contact" className='btn btn2'>Get Started Today
                     <ArrowRight className='ms-2' size={20}/>
-                  </a>
-                  <a to="" className='btn btn-outline-primary ms-4'>View Our Services</a>
+                  </Link>
+                  <Link to="/services" className='btn btn-outline-primary ms-4'>View Our Services</Link>
                  </div>
               </div>
                 

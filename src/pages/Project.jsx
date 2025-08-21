@@ -1,6 +1,10 @@
 import React from 'react'
-import healthcare from '../assets/img/healthcare-network-COHQPKr5.jpg';
 import { Award, Clock, Globe, Users, ArrowRight } from 'lucide-react';
+import sever from '../assets/img/server-ver.png';
+import iaas from '../assets/img/iaas.jpeg';
+import cctv from '../assets/img/cctv.jpeg';
+import network from '../assets/img/network.jpg';
+import {Link} from 'react-router-dom'
 
 function Project() {
      const stats = [
@@ -12,34 +16,35 @@ function Project() {
     const projects = [
         {
             id: 1,
-            image: healthcare,
-            title: 'Healthcare Network Modernization',
-            description: 'Complete Inftastructure overhaul for a 300-bed hospital including network upgrade, cybersecurity implementation, and cloud migration for patient records system. Implemented cutting-edges security protocols and disaster recovery systems.'
+            image: sever,
+            title: 'Server Virtualization Project',
+            description: 'A server virtualization project uses a hypervisor, or specialized software, to divide a single physical server into multiple isolated virtual servers (VMs), allowing each VM to run its own operating system and applications'
         },
           {
             id: 2,
-            image: healthcare,
-            title: 'Healthcare Network Modernization',
-            description: 'Complete Inftastructure overhaul for a 300-bed hospital including network upgrade, cybersecurity implementation, and cloud migration for patient records system. Implemented cutting-edges security protocols and disaster recovery systems.'
+            image: iaas,
+            title: 'Infrastructure as a service (IaaS)',
+            description: 'IaaS is a cloud computing model that provides on-demand access to essential IT resources like servers, networking, and storage over the internet on a pay-as-you-go basis.'
         },
           {
             id: 3,
-            image: healthcare,
-            title: 'Healthcare Network Modernization',
-            description: 'Complete Inftastructure overhaul for a 300-bed hospital including network upgrade, cybersecurity implementation, and cloud migration for patient records system. Implemented cutting-edges security protocols and disaster recovery systems.'
+            image: cctv,
+            title: 'CCTV Surveillance System',
+            description: 'A CCTV surveillance system, or Closed-Circuit Television system, uses a network of strategically placed cameras to capture and transmit video footage for security and monitoring purposes.'
         },
           {
             id: 4,
-            image: healthcare,
-            title: 'Healthcare Network Modernization',
-            description: 'Complete Inftastructure overhaul for a 300-bed hospital including network upgrade, cybersecurity implementation, and cloud migration for patient records system. Implemented cutting-edges security protocols and disaster recovery systems.'
+            image: network,
+            title: 'Office network solutions',
+            description: 'Office network solutions provide the infrastructure and technologies to connect computers, devices, and users for seamless data sharing, communication, and efficient operations.'
         }
     ]
   return (
     <div>
         <section className='container-fluid custom-gradient pb-5'>
-            <div className="text-center pb-5 " style={{ paddingTop: '150px' }}>
-                <h1 className='fw-bold mb-4' style={{ fontSize: '3rem' }}>Featured Success Stories</h1>
+          <div className='container'>
+             <div className="text-center pb-5 " style={{ paddingTop: '150px' }}>
+                <h1 className='fw-bold mb-4' style={{ fontSize: '3rem' }}>Our Projects</h1>
                     <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
                         Explore our portfolio showcasing expertise across various industries
                     </p>
@@ -47,23 +52,25 @@ function Project() {
 
         <div className="row">
             {projects.map((project, index) => (
-                <div className="col-lg-4 mb-3" key={index}>
+                <div className="col-lg-6 mb-3" key={index}>
                 <div className="card custom-hover-card2 border h-100">
                     <img 
                     src={project.image} 
                     className="card-img-top" 
                     alt={project.title} 
-                    style={{ objectFit: 'cover', height: '200px' }} 
+                    style={{ objectFit: 'cover', height: '350px' }} 
                     />
 
-                    <div className="card-body">
-                    <h5 className="card-title fw-bold">{project.title}</h5>
+                    <div className="card-body pt-4">
+                    <h5 className="card-title fw-bold BlueColor">{project.title}</h5>
                     <p className="card-text secondColor">{project.description}</p>
                     </div>
                 </div>
                 </div>
             ))}
         </div>
+          </div>
+           
         </section>
 
         <section className='container-fluid py-5' style={{ backgroundColor: '#1d70b7' }}>
@@ -104,15 +111,15 @@ function Project() {
         <section>
           <div className='bgPrimary10 py-5 d-flex flex-column align-items-center justify-content-center text-center' style={{ gap: '1rem' }}> 
               <h1 className='fw-bold' style={{ fontSize: '3rem' }}>
-                  Ready to Join Our Success Stories?              </h1>
+                  Ready to Join?              </h1>
               <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
                   Let's discuss how we can transform your business with a customized IT solution. Our expert team is <br /> ready to help you achieve your technology goals.
               </p>
 
               <div className="btngroup">
-                  <a to="" className='btn btn2' style={{ fontSize: '18px' }}>Start Your Project
+                  <Link to="/contact" className='btn btn2' style={{ fontSize: '18px' }}>Start Your Project
                       <ArrowRight className='ms-2' size={20}/>
-                  </a>
+                  </Link>
                   {/* <a to="" className='btn btn-outline-primary ms-4' style={{ fontSize: '18px' }}>View Our Services</a> */}
 
               </div>

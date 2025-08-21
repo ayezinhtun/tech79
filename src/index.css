@@ -20,7 +20,7 @@
 }
 
 .BlueColor{
-    color: #1d70b7;
+    color: #1d70b7 !important;
 }
 
 .secondColor{
@@ -64,11 +64,11 @@
 }
 
 .custom-hover-card2:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* shadow on card */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* shadow on card */
 }
 
 .custom-hover-card2:hover img {
-  transform: scale(1.02); /* only image zooms */
+  transform: scale(1.01); /* only image zooms */
 }
 
 .custom-hover-card3:hover {
@@ -81,6 +81,22 @@
   color: #7a8ca0 !important;
   opacity: 0.6 !important;
 }
+
+
+.custom-hover-card3 {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.custom-hover-card3:hover {
+  background-color: #1d70b7 !important; /* Blue background */
+  color: #fff; /* Make text white for contrast */
+}
+
+.custom-hover-card3:hover .card-title,
+.custom-hover-card3:hover .card-text {
+  color: #fff !important; /* Ensure title and description also turn white */
+}
+
 
 
 

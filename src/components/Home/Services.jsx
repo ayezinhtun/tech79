@@ -1,37 +1,37 @@
 import React from 'react'
-import { Monitor, Shield, Cloud, Settings, Headphones, Wrench, } from 'lucide-react';
+import { Monitor, Shield, Cloud, Settings, Headphones, Wrench, Server, UserCheck, DatabaseBackup, } from 'lucide-react';
 
 function Services() {
       const services = [
     {
       icon: Monitor,
-      title: "Remote Support",
-      description: "Fast, secure remote assistance for all your technical issues. Get help without leaving your desk."
+      title: "IT Help Desk & Technical Support",
+      description: "Fast and reliable assistance for day-to-day technical issues, ensuring minimal downtime."
+    },
+    {
+      icon: Server,
+      title: "Server Installation & Configuration",
+      description: "Deployment and management of physical and cloud-based servers to support your operations."
     },
     {
       icon: Shield,
-      title: "Cybersecurity",
-      description: "Comprehensive security solutions to protect your business from cyber threats and data breaches."
+      title: "Cybersecurity & Threat Protection",
+      description: "Safeguarding your systems and data from malware, ransomware, and cyberattacks."
     },
     {
       icon: Cloud,
       title: "Cloud Services",
-      description: "Cloud migration, management, and optimization services for improved efficiency and scalability."
+      description: "Migration, setup, and management of cloud platforms to boost collaboration and productivity."
     },
     {
-      icon: Settings,
-      title: "System Maintenance",
-      description: "Proactive system monitoring and maintenance to prevent issues before they impact your business."
+      icon: UserCheck,
+      title: "IT Consultant",
+      description: "An IT consultant is a technology professional who supports clients during technological projects. "
     },
     {
-      icon: Headphones,
-      title: "Help Desk",
-      description: "Professional help desk services with multi-level support for all your IT needs."
-    },
-    {
-      icon: Wrench,
-      title: "Hardware Setup",
-      description: "Complete hardware installation, configuration, and troubleshooting services."
+      icon: DatabaseBackup,
+      title: "Data Backup & Disaster Recovery",
+      description: "Business continuity solutions to ensure your data is protected and recoverable."
     }
   ];
   return (

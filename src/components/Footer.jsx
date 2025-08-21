@@ -1,67 +1,86 @@
-import { Monitor, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Monitor, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="text-white" style={{ backgroundColor: '#1d70b7' }}>
-      <div className="container-fluid pt-5">
-        <div className="row g-4">
+    <footer className="text-white" style={{ backgroundColor: "#1d70b7" }}>
+      <div className="container-fluid px-5 pt-5 pb-4">
+        <div className="row g-5">
+          
           {/* Brand / About */}
-          <div className="col-md-3">
+          <div className="col-lg-4">
             <div className="d-flex align-items-center mb-3">
-              <h5 className="fw-bold mb-0">Tech 79 Solutions</h5>
+              <h4 className="fw-bold mb-0">Tech 79 Solutions</h4>
             </div>
-            <p style={{ lineHeight: '2' }}>
-              Your trusted partner for comprehensive IT support and technology solutions.
+            <p style={{ lineHeight: "1.8" }}>
+             Empowering Your Business with Open Technology
             </p>
           </div>
 
+          {/* Quick Links */}
+          <div className="col-lg-2 col-md-6">
+            <h5 className="fw-semibold mb-3">Quick Links</h5>
+            <ul className="list-unstyled mb-0" style={{ lineHeight: "2" }}>
+              <li><a href="/" className="text-decoration-none text-white">Home</a></li>
+              <li><a href="/about" className="text-decoration-none text-white">About Us</a></li>
+              <li><a href="/services" className="text-decoration-none text-white">Services</a></li>
+              <li><a href="/projects" className="text-decoration-none text-white">Projects</a></li>
+              <li><a href="/contact" className="text-decoration-none text-white">Contact</a></li>
+            </ul>
+          </div>
+
           {/* Services */}
-          <div className="col-md-3">
-            <h5 className="fw-semibold">Services</h5>
-            <ul className="list-unstyled" style={{ lineHeight: "2" }}>
-              <li><a href="#" className="text-decoration-none text-white hover-dark">Remote Support</a></li>
-              <li><a href="#" className="text-decoration-none text-white hover-dark">Cybersecurity</a></li>
-              <li><a href="#" className="text-decoration-none text-white hover-dark">Cloud Services</a></li>
-              <li><a href="#" className="text-decoration-none text-white hover-dark">System Maintenance</a></li>
+          <div className="col-lg-3 col-md-6">
+            <h5 className="fw-semibold mb-3">Our Services</h5>
+            <ul className="list-unstyled mb-0" style={{ lineHeight: "2" }}>
+              <li><a href="/services" className="text-decoration-none text-white">IT Help Desk & Technical Support</a></li>
+              <li><a href="/services" className="text-decoration-none text-white">Server Installation & Configuration</a></li>
+              <li><a href="/services" className="text-decoration-none text-white">Cloud Services</a></li>
+              <li><a href="/services" className="text-decoration-none text-white">Remote & On-site IT Support</a></li>
+              <li><a href="/services" className="text-decoration-none text-white">IT Consultant</a></li>
             </ul>
           </div>
 
-          {/* Company */}
-          <div className="col-md-3">
-            <h5 className="fw-semibold">Company</h5>
-            <ul className="list-unstyled" style={{ lineHeight: 2 }}>
-              <li><a href="/" className="text-decoration-none text-white hover-dark">About Us</a></li>
-              <li><a href="/" className="text-decoration-none text-white hover-dark">Our Team</a></li>
-              <li><a href="/" className="text-decoration-none text-white hover-dark">Careers</a></li>
-              <li><a href="/contact" className="text-decoration-none text-white hover-dark">Contact</a></li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div className="col-md-3">
-            <h5 className="fw-semibold">Contact Info</h5>
-            <div style={{ lineHeight: '2' }}>
+          {/* Contact & Social */}
+          <div className="col-lg-3 col-md-6">
+            <h5 className="fw-semibold mb-3">Contact Info</h5>
+            <div className="mb-3" style={{ lineHeight: "2" }}>
               <div className="d-flex align-items-center mb-2">
-                <Phone size={20} className="me-2" />
-                <span>+1 (555) 123-4567</span>
+                <Phone size={18} className="me-2" />
+                <div>
+                   <span className="me-2">09-780407008</span>  ,
+                   <span className="ms-2">09-971260043</span>
+                </div>
+               
+
               </div>
               <div className="d-flex align-items-center mb-2">
-                <Mail size={20} className="me-2" />
-                <span>support@tech79.com</span>
+                <Mail size={18} className="me-2" />
+                <div>
+                    <div>mgmgthantxin@gmail.com</div> 
+                </div>
+            
               </div>
               <div className="d-flex align-items-center">
-                <MapPin size={20} className="me-2" />
-                <span>123 Tech Street, Digital City</span>
+                <MapPin size={18} className="me-2" />
+                <span>149(5-B), 48th Street <br /> Botatuang Township, Yangon</span>
               </div>
             </div>
-          </div>
 
+            <h6 className="fw-semibold mb-2">Follow Us</h6>
+            <div className="d-flex gap-3">
+              <a href="#" className="text-white"><Facebook size={23} /></a>
+              <a href="#" className="text-white"><Twitter size={23} /></a>
+              <a href="#" className="text-white"><Youtube size={23} /></a>
+            </div>
+          </div>
         </div>
 
         {/* Divider and copyright */}
-        <hr className="border-white-25 mt-4" />
-        <div className="text-center py-4">
-          <p className="mb-0">Copyright © 2025 Tech79-Solutions</p>
+        <hr className="border-white mt-5" />
+        <div className="text-center py-3">
+          <p className="mb-0 small">
+            Copyright © 2025 Tech79-Solutions
+          </p>
         </div>
       </div>
     </footer>
