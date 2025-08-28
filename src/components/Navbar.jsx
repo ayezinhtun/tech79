@@ -131,7 +131,7 @@ const Navbar = () => {
                     : { color: "#6c757d" }
                 }
               >
-                Support
+                Supports
               </Link>
             </li>
 
