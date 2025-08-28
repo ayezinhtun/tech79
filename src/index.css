@@ -1,22 +1,31 @@
+.navbar-blur {
+  background: rgba(255, 255, 255, 0.7); /* semi-transparent */
+  backdrop-filter: blur(8px); /* blur effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  border-bottom: 1px solid #dee2e6;
+}
+
 .btn.btn1 {
   border: 1px solid #06f917;
+  color: #1d70b7;
   background-color: white;
   transition: 0.3s ease-in-out;
 }
 
 .btn.btn1:hover {
   background-color: #06f917;
-  color: white;
+  color: #1d70b7;
 }
 
 .btn.btn2{
     background-color: #06f917;
-    color: white;
+    color: #1d70b7;
     transition: 0.3s ease-in-out;
 }
 
 .btn.btn2:hover{
     border: 1px solid #06f917;
+    color: #1d70b7;
 }
 
 .BlueColor{
@@ -26,9 +35,54 @@
 .secondColor{
     color: #7a8ca0;
 }
+/* 
+.headingColor {
+  background: linear-gradient(90deg, #003399, #1d70b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.headingColor {
+  background: linear-gradient(
+    90deg, 
+    #1d70b7 60%,   /* blue up to 60% */
+    #06f917 90%    /* green starts at 60% and fully at 90% */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.headingGradient {
+  background: linear-gradient(
+    135deg,      /* diagonal from top-left to bottom-right */
+    #06f917 10%, 
+    #1d70b7 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+
+
+
 
 .custom-gradient {
   background: linear-gradient(to bottom right, #f7f9fb, #ffffff);
+}
+
+.bgCustom1{
+    background: linear-gradient(90deg, #003399, #1d70b7);
+}
+
+.bgCustom1 {
+  background: linear-gradient(90deg, #003399, #1d70b7);
+  transition: background 0.3s ease; /* smooth transition */
+}
+
+.bgCustom1:hover {
+  background: linear-gradient(90deg, #0044cc, #3399ff); /* slightly lighter */
 }
 
 .bgCustom {
@@ -96,6 +150,29 @@
 .custom-hover-card3:hover .card-text {
   color: #fff !important; /* Ensure title and description also turn white */
 }
+
+.industry-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+ box-shadow: 0 8px 20px rgba(0, 123, 255, 0.25);
+}
+
+.industry-img {
+  transition: transform 0.5s ease-in-out;
+  object-fit: cover;
+  height: 200px;
+  overflow: hidden;
+}
+
+.industry-card:hover .industry-img {
+  transform: scale(1.02);
+}
+
 
 
 

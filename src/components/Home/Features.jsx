@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { Clock, Shield, Users, Award, Zap, CheckCircle } from 'lucide-react';
-
+import { motion } from 'framer-motion';
 
 function Features() {
-     const features = [
+  const features = [
     {
       icon: Clock,
       title: "24/7 Availability",
@@ -35,41 +35,51 @@ function Features() {
       description: "Proven track record of maintaining system availability and performance."
     }
   ];
+
+  // Animation variants for the cards
+  const cardVariant = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   return (
     <div className='py-5 container-fluid'>
-          <div className='text-center mb-5'>
-            <h1 className='fw-bold'>Why Choose Tech79-Solutions?</h1>
-            <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
-                Experience the difference with our proven expertise and commitment to <br />
-                excellence
-              </p>
-          </div>
-
-          <div>
-          <div className="row">
-            {features.map((feature, index) => {
-              const Icon = feature.icon; 
-
-              return (
-                <div className="col-lg-4 mb-3" key={index}>
-                  <div className="card custom-hover-card d-flex flex-column align-items-center justify-content-center p-4 border-0" style={{ gap: '1rem' }}>
-                    <div className='bgCustom rounded-circle d-flex align-items-center justify-content-center' style={{ width: '50px', height: '50px' }}>
-                      <Icon color="blue" size={30} />
-                    </div>
-
-                    <h5 className='fw-bold'>{feature.title}</h5>
-                    <p className='secondColor text-center'>{feature.description}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-            
-          </div>
-
+      <div className='text-center mb-5'>
+        <h1 className='fw-bold'>Why Choose Tech79-Solutions?</h1>
+        <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
+          Experience the difference with our proven expertise and commitment to <br />
+          excellence
+        </p>
       </div>
+
+      <div className="row">
+        {features.map((feature, index) => {
+          const Icon = feature.icon;
+
+          return (
+            <motion.div
+              className="col-lg-4 mb-3"
+              key={index}
+              variants={cardVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+            >
+              <div className="card custom-hover-card d-flex flex-column align-items-center justify-content-center p-4 border-0" style={{ gap: '1rem' }}>
+                <div className='bgCustom rounded-circle d-flex align-items-center justify-content-center' style={{ width: '50px', height: '50px' }}>
+                  <Icon color="blue" size={30} />
+                </div>
+
+                <h5 className='fw-bold'>{feature.title}</h5>
+                <p className='secondColor text-center'>{feature.description}</p>
+              </div>
+            </motion.div>
+          );
+        })}
+      </div>
+    </div>
   )
 }
 
-export default Features
+export default Features;

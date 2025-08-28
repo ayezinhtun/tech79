@@ -17,7 +17,7 @@ function Home() {
       <Services/>
       <Statistics/>
       <Partners/>
-      <Upcoming/>
+      {/* <Upcoming/> */}
       <CallToAction/>
 
     </div>

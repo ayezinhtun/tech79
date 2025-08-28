@@ -9,15 +9,15 @@ function CallToAction() {
             Ready To Transform Your IT <br /> Infrastructure?
         </h1>
         <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
-             Join hundreds of satisfied businesses who trust TechVault for their IT needs. 
+             Join hundreds of satisfied businesses who trust Tech79Solutions for their IT needs. 
             Get started today with a <br /> free consultation and discover how we can optimize your technology.
         </p>
 
         <div className="btngroup">
-            <Link to="/contact" className='btn btn2' style={{ fontSize: '18px' }}>Start Free Consultation
+            <Link to="/contact" className='btn btn2 btn-lg' style={{ fontSize: '18px' }}>Start Free Consultation
                  <ArrowRight className='ms-2' size={20}/>
              </Link>
-            <Link to="/services" className='btn btn-outline-primary ms-4' style={{ fontSize: '18px' }}>View Our Services</Link>
+            <Link to="/services" className='btn btn-outline-primary ms-4 btn-lg' style={{ fontSize: '18px' }}>View Our Services</Link>
 
         </div>
     </div>

@@ -1,16 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from '../assets/img/logo.png';
+import logo from "../assets/img/logo.png";
 
 const Navbar = () => {
   const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
 
   const isActive = (path) => location.pathname === path;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar p-0 navbar-expand-lg bg-white border-bottom fixed-top" style={{borderColor: "#dee2e6"}}>
+    <nav
+      className={`navbar p-0 navbar-expand-lg fixed-top ${
+        scrolled ? "navbar-blur" : "bg-white border-bottom"
+      }`}
+      style={{ borderColor: "#dee2e6", transition: "all 0.3s ease" }}
+    >
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/" >
-         <img src={logo} alt="" style={{ width: '70px', height: '60px' , objectFit: 'cover' }}></img>
+        <Link className="navbar-brand" to="/">
+          <img
+            src={logo}
+            alt="logo"
+            style={{ width: "70px", height: "60px", objectFit: "cover" }}
+          />
         </Link>
 
         <button
@@ -27,62 +51,104 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-center">
-            
             <li className="nav-item">
               <Link
-                className="nav-link me-3"
+                className="nav-link me-3 fw-semibold"
                 to="/"
-                style={isActive('/') ? { color: '#1d70b7' } : { color: 'black' }}
+                style={
+                  isActive("/")
+                    ? { color: "#1d70b7" }
+                    : { color: "#6c757d" }
+                }
               >
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
-             <Link
-                className="nav-link me-3"
+              <Link
+                className="nav-link me-3 fw-semibold"
                 to="/about"
-                style={isActive('/about') ? { color: '#1d70b7' } : { color: 'black' }}
+                style={
+                  isActive("/about")
+                    ? { color: "#1d70b7" }
+                    : { color: "#6c757d" }
+                }
               >
                 About
               </Link>
             </li>
 
-             <li className="nav-item">
-               <Link
-                className="nav-link me-3"
-                to="/projects"
-                style={isActive('/projects') ? { color: '#1d70b7' } : { color: 'black' }}
+            <li className="nav-item">
+              <Link
+                className="nav-link me-3 fw-semibold"
+                to="/industries"
+                style={
+                  isActive("/industries")
+                    ? { color: "#1d70b7" }
+                    : { color: "#6c757d" }
+                }
               >
-                Projects
+                Industries Served
               </Link>
             </li>
 
-             <li className="nav-item">
-             <Link
-                className="nav-link me-3"
+            <li className="nav-item">
+              <Link
+                className="nav-link me-3 fw-semibold"
+                to="/partners"
+                style={
+                  isActive("/partners")
+                    ? { color: "#1d70b7" }
+                    : { color: "#6c757d" }
+                }
+              >
+                Partners
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                className="nav-link me-3 fw-semibold"
                 to="/services"
-                style={isActive('/services') ? { color: '#1d70b7' } : { color: 'black' }}
+                style={
+                  isActive("/services")
+                    ? { color: "#1d70b7" }
+                    : { color: "#6c757d" }
+                }
               >
                 Services
               </Link>
             </li>
 
-             <li className="nav-item">
+            <li className="nav-item">
               <Link
-                className="nav-link"
+                className="nav-link me-3 fw-semibold"
+                to="/support"
+                style={
+                  isActive("/support")
+                    ? { color: "#1d70b7" }
+                    : { color: "#6c757d" }
+                }
+              >
+                Support
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                className="nav-link fw-semibold"
                 to="/contact"
-                style={isActive('/contact') ? { color: '#1d70b7' } : { color: 'black' }}
+                style={
+                  isActive("/contact")
+                    ? { color: "#1d70b7" }
+                    : { color: "#6c757d" }
+                }
               >
                 Contact
               </Link>
             </li>
           </ul>
-
-          <div className="d-flex ms-auto">
-             <a href="" className="btn btn2 me-2">Sign in</a>
-             <a href="" className="btn btn1">Sign up</a>
-          </div>
         </div>
       </div>
     </nav>
