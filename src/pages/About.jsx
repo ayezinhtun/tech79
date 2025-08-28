@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Award, Clock, Globe, Users } from 'lucide-react';
+import { Award, BookOpen, Clock, Coffee, Globe, Heart, Lightbulb, Target, Users, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 function About() {
@@ -18,6 +18,39 @@ function About() {
     { name: "Lisa Wang", role: "Help Desk Manager", experience: "8+ years in technical support and customer service" }
   ];
 
+
+  const benefits = [
+  {
+    title: "Competitive Compensation",
+    description: "Industry-leading salaries, equity options, and comprehensive benefits packages.",
+    icon: Award
+  },
+  {
+    title: "Remote-First Culture",
+    description: "Work from anywhere with flexible hours and regular team retreats around the world.",
+    icon: Globe
+  },
+  {
+    title: "Learning & Development",
+    description: "Continuous learning with dedicated budgets for courses, conferences, and certifications.",
+    icon: BookOpen
+  },
+  {
+    title: "Health & Wellness",
+    description: "Comprehensive health insurance, mental health support, and wellness programs.",
+    icon: Heart
+  },
+  {
+    title: "Modern Equipment",
+    description: "Latest hardware and software to ensure you have the tools you need to succeed.",
+    icon: Zap
+  },
+  {
+    title: "Work-Life Balance",
+    description: "Generous PTO, parental leave, and policies that respect your time outside of work.",
+    icon: Coffee
+  }
+];
   return (
     <div>
 
@@ -72,59 +105,69 @@ function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row g-4 d-flex align-items-stretch">
+    <section className="py-5">
+      <div className="container">
+        <div className="row g-4 d-flex align-items-stretch">
 
-            <motion.div
-              className="col-lg-6"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <div className="card h-100 shadow-lg border-0 bg-light bg-opacity-75 py-3">
-                <div className="card-header bg-transparent border-0">
-                  <h5 className="card-title BlueColor fs-3 fw-bold">Our Vision</h5>
+          {/* Our Vision */}
+          <motion.div
+            className="col-lg-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="card shadow rounded-3 p-4 h-100" style={{ backgroundColor: "#fff" }}>
+              <div className="d-flex align-items-center mb-4">
+                <div
+                  className="d-flex justify-content-center align-items-center rounded-circle me-3"
+                  style={{ width: "48px", height: "48px", backgroundColor: "#DBEAFE" }}
+                >
+                  <Lightbulb className="text-primary" size={24} />
                 </div>
-                <div className="card-body">
-                  <ul className="secondColor lh-lg">
-                    <li>To become the most trusted and leading IT service provider in Myanmar and the region.</li>
-                    <li>To drive digital transformation with reliable, secure, and innovative technology solutions.</li>
-                    <li>To empower businesses through seamless IT support tailored to their growth.</li>
-                    <li>To deliver excellence by embracing cutting-edge tools and global standards.</li>
-                    <li>To be a long-term strategic partner in our clients’ technology journey.</li>
-                  </ul>
-                </div>
+                <h3 className="h4 mb-0 text-dark fw-bold">Our Vision</h3>
               </div>
-            </motion.div>
+              <ul className="text-secondary lh-lg mb-0">
+                <li>To become the most trusted and leading IT service provider in Myanmar and the region.</li>
+                <li>To drive digital transformation with reliable, secure, and innovative technology solutions.</li>
+                <li>To empower businesses through seamless IT support tailored to their growth.</li>
+                <li>To deliver excellence by embracing cutting-edge tools and global standards.</li>
+                <li>To be a long-term strategic partner in our clients’ technology journey.</li>
+              </ul>
+            </div>
+          </motion.div>
 
-            <motion.div
-              className="col-lg-6"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="card h-100 shadow-lg border-0 bg-light bg-opacity-75 py-3">
-                <div className="card-header bg-transparent border-0">
-                  <h5 className="card-title fw-bold fs-3 BlueColor">Our Mission</h5>
+          {/* Our Mission */}
+          <motion.div
+            className="col-lg-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <div className="card shadow rounded-3 p-4 h-100" style={{ backgroundColor: "#fff" }}>
+              <div className="d-flex align-items-center mb-4">
+                <div
+                  className="d-flex justify-content-center align-items-center rounded-circle me-3"
+                  style={{ width: "48px", height: "48px", backgroundColor: "#DBEAFE" }}
+                >
+                  <Target className="text-primary" size={24} />
                 </div>
-                <div className="card-body">
-                  <ul className="secondColor lh-lg">
-                    <li>To provide fast, efficient, and cost-effective IT support services.</li>
-                    <li>To understand and meet each client’s unique technological needs.</li>
-                    <li>To maintain the highest standards of quality, security, and customer satisfaction.</li>
-                    <li>To build a skilled, responsible, and continuously improving technical team.</li>
-                    <li>To create scalable IT solutions that enable sustainable business growth.</li>
-                  </ul>
-                </div>
+                <h3 className="h4 mb-0 text-dark fw-bold">Our Mission</h3>
               </div>
-            </motion.div>
+              <ul className="text-secondary lh-lg mb-0">
+                <li>To provide fast, efficient, and cost-effective IT support services.</li>
+                <li>To understand and meet each client’s unique technological needs.</li>
+                <li>To maintain the highest standards of quality, security, and customer satisfaction.</li>
+                <li>To build a skilled, responsible, and continuously improving technical team.</li>
+                <li>To create scalable IT solutions that enable sustainable business growth.</li>
+              </ul>
+            </div>
+          </motion.div>
 
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* About Company */}
       <motion.section
@@ -134,9 +177,9 @@ function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="container">
+        <div className="container-fluid">
           <h1 className='fw-bold text-center mb-5'>About Company</h1>
-          <p className="mb-6 secondColor text-center" style={{ lineHeight: '1.625' }}>
+          <p className="mb-6 secondColor text-center" style={{ lineHeight: '1.625', fontSize: '1.25rem' }}>
             Tech79Solutions Company Limited is a Myanmar-based IT support and services company founded in July 2025. 
             We specialize in delivering innovative and reliable IT solutions for businesses across various industries. 
             From network setup to cloud services and technical support, we are committed to helping our clients operate smoothly in a digital world.
@@ -197,7 +240,7 @@ function About() {
           <h1
             className='fw-bold'
           >
-            Join Our Team
+            Why Join Us
           </h1>
           <p
             className='secondColor'
@@ -206,6 +249,40 @@ function About() {
             We're always looking for talented individuals who share our passion for technology and exceptional service
           </p>
         </div>
+
+        <div className="container-fluid pt-5">
+
+        {/* Benefits Grid */}
+        <div className="row g-4">
+          {benefits.map((benefit, index) => {
+            const Icon = benefit.icon;
+
+            return (
+              <motion.div
+                key={index}
+                className="col-md-6 col-lg-4"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+              >
+                <div className="card custom-hover-card p-4 border-0" style={{ gap: '1rem' }}>
+                  <div
+                    className="rounded d-flex align-items-center justify-content-center mb-3"
+                    style={{ width: '50px', height: '50px', backgroundColor: '#DBEAFE' }}
+                  >
+                    <Icon color="#1d4ed8" size={30} />
+                  </div>
+
+                  <h5 className="fw-bold">{benefit.title}</h5>
+                  <p className="text-secondary mb-0">{benefit.description}</p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+
       </section>
 
       {/* CTA Section */}

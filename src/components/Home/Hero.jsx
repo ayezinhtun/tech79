@@ -8,8 +8,8 @@ import AnimatedBackground from '../AnimatedBackground';
 function Hero() {
   return (
     <div
-      className='container-fluid d-flex align-items-center justify-content-center'
-      style={{ height: '110vh' }}
+      className='container-fluid d-flex align-items-center justify-content-center custom-gradient'
+      style={{ height: '100vh' }}
     >
       <div className="row w-100">
         {/* Left Text Section */}

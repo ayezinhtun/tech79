@@ -64,17 +64,13 @@
   display: inline-block;
 }
 
-
-
-
-
 .custom-gradient {
-  background: linear-gradient(to bottom right, #f7f9fb, #ffffff);
+  background: #f8f9fa;
 }
 
-.bgCustom1{
+/* .bgCustom1{
     background: linear-gradient(90deg, #003399, #1d70b7);
-}
+} */
 
 .bgCustom1 {
   background: linear-gradient(90deg, #003399, #1d70b7);
