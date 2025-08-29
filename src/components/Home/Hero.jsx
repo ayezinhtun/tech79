@@ -21,7 +21,7 @@ function Hero() {
           viewport={{ once: true }}
         >
           <div>
-            <h1 className='fw-bold' style={{ fontSize: '3.5rem' }}>
+            <h1 className='fw-bold fs-1 fs-sm-2'>
               Your Trusted Partner in <span className='headingColor'>Tech Support</span>
             </h1>
             <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
