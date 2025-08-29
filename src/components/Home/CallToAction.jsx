@@ -13,12 +13,23 @@ function CallToAction() {
             Get started today with a <br /> free consultation and discover how we can optimize your technology.
         </p>
 
-        <div className="btngroup">
-            <Link to="/contact" className='btn btn2 btn-lg' style={{ fontSize: '18px' }}>Start Free Consultation
-                 <ArrowRight className='ms-2' size={20}/>
-             </Link>
-            <Link to="/services" className='btn btn-outline-primary ms-4 btn-lg' style={{ fontSize: '18px' }}>View Our Services</Link>
-
+        <div className="d-flex flex-column flex-sm-row align-items-start">
+                       <Link
+                         to="/contact"
+                         className="btn btn2 btn-lg mb-3 mb-sm-0 me-sm-3"
+                         style={{ fontSize: "18px" }}
+                       >
+                         Get Started Today
+                         <ArrowRight className="ms-2" size={20} />
+                       </Link>
+       
+                       <Link
+                         to="/services"
+                         className="btn btn-outline-primary btn-lg"
+                         style={{ fontSize: "18px" }}
+                       >
+                         View Our Services
+                       </Link>
         </div>
     </div>
   )
