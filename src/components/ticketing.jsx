@@ -102,9 +102,9 @@ export default function Ticket() {
                     <Phone/>
                   </div>
                   <div>
-                    <p className="mb-0 fw-medium">Phone Support</p>
-                    <p className="mb-0 small text-muted">+95 1 234 5678</p>
-                    <p className="mb-0 small text-muted">Mon-Fri, 9AM-6PM</p>
+                    <p className="mb-0 fw-medium fw-bold">Phone Support</p>
+                    <p className="mb-0 small text-muted">09-780407008</p>
+                    <p className="mb-0 small text-muted">09-971260043</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center mb-3">
@@ -112,9 +112,9 @@ export default function Ticket() {
                     <Mail/>
                   </div>
                   <div>
-                    <p className="mb-0 fw-medium">Email Support</p>
-                    <p className="mb-0 small text-muted">support@shwesystems.com</p>
-                    <p className="mb-0 small text-muted">24/7 response</p>
+                    <p className="mb-0 fw-medium fw-bold">Email Support</p>
+                    <p className="mb-0 small text-muted">mgmgthantxin@gmail.com</p>
+                    <p className="mb-0 small text-muted">sungehtwe@gmail.com</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center">
@@ -122,9 +122,9 @@ export default function Ticket() {
                     <MapPin />
                   </div>
                   <div>
-                    <p className="mb-0 fw-medium">Office Location</p>
+                    <p className="mb-0 fw-medium fw-bold">Office Location</p>
+                    <p className="mb-0 small text-muted">149(5-B), 48th Street Botatuang Township,</p>
                     <p className="mb-0 small text-muted">Yangon, Myanmar</p>
-                    <p className="mb-0 small text-muted">Visit us for consultation</p>
                   </div>
                 </div>
               </div>

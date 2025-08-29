@@ -1,32 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 
 const Navbar = () => {
   const location = useLocation();
-  const [scrolled, setScrolled] = useState(false);
-
   const isActive = (path) => location.pathname === path;
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <nav
-      className={`navbar p-0 navbar-expand-lg fixed-top ${
-        scrolled ? "navbar-blur" : "bg-white border-bottom"
-      }`}
-      style={{ borderColor: "#dee2e6", transition: "all 0.3s ease" }}
+      className="navbar p-0 navbar-expand-lg fixed-top bg-white border-bottom"
+      style={{ borderColor: "#dee2e6" }}
     >
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
@@ -50,16 +33,12 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-center">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-column flex-lg-row align-items-center">
             <li className="nav-item">
               <Link
                 className="nav-link me-3 fw-semibold"
                 to="/"
-                style={
-                  isActive("/")
-                    ? { color: "#1d70b7" }
-                    : { color: "#6c757d" }
-                }
+                style={isActive("/") ? { color: "#1d70b7" } : { color: "#6c757d" }}
               >
                 Home
               </Link>
@@ -69,11 +48,7 @@ const Navbar = () => {
               <Link
                 className="nav-link me-3 fw-semibold"
                 to="/about"
-                style={
-                  isActive("/about")
-                    ? { color: "#1d70b7" }
-                    : { color: "#6c757d" }
-                }
+                style={isActive("/about") ? { color: "#1d70b7" } : { color: "#6c757d" }}
               >
                 About
               </Link>
@@ -83,11 +58,7 @@ const Navbar = () => {
               <Link
                 className="nav-link me-3 fw-semibold"
                 to="/industries"
-                style={
-                  isActive("/industries")
-                    ? { color: "#1d70b7" }
-                    : { color: "#6c757d" }
-                }
+                style={isActive("/industries") ? { color: "#1d70b7" } : { color: "#6c757d" }}
               >
                 Industries Served
               </Link>
@@ -97,11 +68,7 @@ const Navbar = () => {
               <Link
                 className="nav-link me-3 fw-semibold"
                 to="/partners"
-                style={
-                  isActive("/partners")
-                    ? { color: "#1d70b7" }
-                    : { color: "#6c757d" }
-                }
+                style={isActive("/partners") ? { color: "#1d70b7" } : { color: "#6c757d" }}
               >
                 Partners
               </Link>
@@ -111,11 +78,7 @@ const Navbar = () => {
               <Link
                 className="nav-link me-3 fw-semibold"
                 to="/services"
-                style={
-                  isActive("/services")
-                    ? { color: "#1d70b7" }
-                    : { color: "#6c757d" }
-                }
+                style={isActive("/services") ? { color: "#1d70b7" } : { color: "#6c757d" }}
               >
                 Services
               </Link>
@@ -125,11 +88,7 @@ const Navbar = () => {
               <Link
                 className="nav-link me-3 fw-semibold"
                 to="/support"
-                style={
-                  isActive("/support")
-                    ? { color: "#1d70b7" }
-                    : { color: "#6c757d" }
-                }
+                style={isActive("/support") ? { color: "#1d70b7" } : { color: "#6c757d" }}
               >
                 Supports
               </Link>
@@ -137,13 +96,9 @@ const Navbar = () => {
 
             <li className="nav-item">
               <Link
-                className="nav-link fw-semibold"
+                className="nav-link me-3 fw-semibold"
                 to="/contact"
-                style={
-                  isActive("/contact")
-                    ? { color: "#1d70b7" }
-                    : { color: "#6c757d" }
-                }
+                style={isActive("/contact") ? { color: "#1d70b7" } : { color: "#6c757d" }}
               >
                 Contact
               </Link>

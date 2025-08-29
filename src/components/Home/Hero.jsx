@@ -59,7 +59,7 @@ function Hero() {
 
         {/* Right Image Section */}
         <motion.div
-          className="col-lg-6"
+          className="col-lg-6 d-none d-sm-block"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
