@@ -1,9 +1,13 @@
-.navbar-blur {
-  background: rgba(255, 255, 255, 0.7); /* semi-transparent */
-  backdrop-filter: blur(8px); /* blur effect */
-  -webkit-backdrop-filter: blur(8px); /* Safari support */
-  border-bottom: 1px solid #dee2e6;
-}
+.responsive-heading {
+    font-size: 3.5rem;
+  }
+
+  /* For phones (smaller screens) */
+  @media (max-width: 576px) {
+    .responsive-heading {
+      font-size: 2.5rem; /* adjust as needed */
+    }
+  }
 
 .btn.btn1 {
   border: 1px solid #06f917;
