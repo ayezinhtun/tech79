@@ -1,8 +1,8 @@
 import React from 'react';
 import { ArrowRight, Shield, Zap, Users } from 'lucide-react';
-import heroimage from '../../assets/img/hero-tech-support.jpg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import logo from '../../assets/img/logo.png'
 import AnimatedBackground from '../AnimatedBackground';
 
 function Hero() {
@@ -69,16 +69,27 @@ function Hero() {
         </motion.div>
 
         {/* Right Image Section */}
-        <motion.div
-          className="col-lg-6 d-none d-sm-block"
+       <motion.div
+          className="col-lg-6 d-none d-sm-block position-relative"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-                <AnimatedBackground />
+          <AnimatedBackground />
 
-          {/* <img src={heroimage} className='w-100 rounded-2' alt="Hero" /> */}
+          {/* Logo in the center */}
+          <div
+            className="position-absolute top-50 start-50 translate-middle"
+            style={{ zIndex: 10 }}
+          >
+            <img
+              src={logo} 
+              alt="Logo"
+              className="img-fluid"
+              style={{ maxWidth: '150px' }}
+            />
+          </div>
         </motion.div>
       </div>
     </div>
