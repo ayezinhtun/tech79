@@ -74,7 +74,7 @@ function About() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Since 2024, we have been the trusted IT partner for businesses across the region, 
+          Since 2023, we have been the trusted IT partner for businesses across the region, 
           providing <br /> comprehensive technology solutions that drive growth and efficiency.
         </motion.p>
       </section>
@@ -180,7 +180,7 @@ function About() {
         <div className="container-fluid">
           <h1 className='fw-bold text-center mb-5'>About Company</h1>
           <p className="mb-6 secondColor text-center" style={{ lineHeight: '1.625', fontSize: '1.25rem' }}>
-            Tech79 Solutions Company Limited is a Myanmar-based IT support and services company founded in July 2025. 
+            Tech79 Solutions Company Limited is a Myanmar-based IT support and services company founded in February 2023. 
             We specialize in delivering innovative and reliable IT solutions for businesses across various industries. 
             From network setup to cloud services and technical support, we are committed to helping our clients operate smoothly in a digital world.
           </p>
@@ -188,7 +188,7 @@ function About() {
       </motion.section>
 
       {/* Leadership Team */}
-      <section className='container-fluid py-5'>
+      {/* <section className='container-fluid py-5'>
         <div className='text-center mb-5'>
           <h1
             className='fw-bold'
@@ -232,10 +232,10 @@ function About() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Join Our Team */}
-      <section className='custom-gradient py-5'>
+      <section className='py-5'>
         <div className="container text-center">
           <h1
             className='fw-bold'
