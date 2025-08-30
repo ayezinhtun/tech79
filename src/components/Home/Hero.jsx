@@ -87,7 +87,7 @@ function Hero() {
               src={logo} 
               alt="Logo"
               className="img-fluid"
-              style={{ maxWidth: '150px' }}
+              style={{ maxWidth: '300px' }}
             />
           </div>
         </motion.div>
