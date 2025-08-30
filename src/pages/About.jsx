@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Award, BookOpen, Clock, Coffee, Globe, Heart, Lightbulb, Target, Users, Zap } from 'lucide-react';
+import { Award, BookOpen, Clock, Coffee, Globe, Heart, Lightbulb, Mail, Phone, Target, Users, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 function About() {
   const stats = [
-    { icon: Users, value: "100+", label: "Trusted Clients" },
+    { icon: Users, value: "50+", label: "Trusted Clients" },
     { icon: Award, value: "5+", label: "Experienced Professionals" },
     { icon: Clock, value: "24/7", label: "Support Available" },
-    { icon: Globe, value: "99.9%", label: "Uptime Guarantee" }
+    // { icon: Globe, value: "99.9%", label: "Uptime Guarantee" }
   ];
 
   const teams = [
@@ -64,7 +64,7 @@ function About() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          About Tech79Solutions
+          About Tech79 Solutions
         </motion.h1>
         <motion.p
           className='secondColor'
@@ -85,7 +85,7 @@ function About() {
           const Icon = stat.icon;
           return (
             <motion.div
-              className="col-lg-3 mb-3"
+              className="col-lg-4 mb-3"
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -96,8 +96,8 @@ function About() {
                 <div className='rounded-circle d-flex align-items-center justify-content-center bg-white' style={{ width: '50px', height: '50px' }}>
                   <Icon color="blue" size={30} />
                 </div>
-                <h5 className='fw-bold text-white'>{stat.value}</h5>
-                <p className='text-center text-white'>{stat.label}</p>
+                <h5 className='fw-bold text-white' style={{ fontSize: '2rem' }}>{stat.value}</h5>
+                <p className='text-center text-white' style={{ fontSize: '1.25rem' }}>{stat.label}</p>
               </div>
             </motion.div>
           );
@@ -180,7 +180,7 @@ function About() {
         <div className="container-fluid">
           <h1 className='fw-bold text-center mb-5'>About Company</h1>
           <p className="mb-6 secondColor text-center" style={{ lineHeight: '1.625', fontSize: '1.25rem' }}>
-            Tech79Solutions Company Limited is a Myanmar-based IT support and services company founded in July 2025. 
+            Tech79 Solutions Company Limited is a Myanmar-based IT support and services company founded in July 2025. 
             We specialize in delivering innovative and reliable IT solutions for businesses across various industries. 
             From network setup to cloud services and technical support, we are committed to helping our clients operate smoothly in a digital world.
           </p>
@@ -286,25 +286,43 @@ function About() {
       </section>
 
       {/* CTA Section */}
-      <section className='bgPrimary10 py-5 d-flex flex-column align-items-center justify-content-center text-center' style={{ gap: '1rem' }}>
-        <h1
-          className='fw-bold'
-          style={{ fontSize: '3rem' }}
-        >
-          Ready To Work Together?
-        </h1>
-        <p
-          className='secondColor'
-          style={{ lineHeight: 1.625, fontSize: '1.25rem' }}
-        >
-          Let us show you how our expertise can transform your business technology
-        </p>
-        <div
-          className="btngroup"
-        >
-          <Link to="/contact" className='btn btn2 btn-lg' style={{ fontSize: '18px' }}>Contact Us Today</Link>
-        </div>
-      </section>
+    <section 
+  className="bgPrimary10 py-5 d-flex flex-column align-items-center justify-content-center text-center" 
+  style={{ gap: "1.5rem" }}
+>
+  <h1 className="fw-bold" style={{ fontSize: "3rem" }}>
+    Ready To Work Together?
+  </h1>
+
+  {/* Distinct text */}
+  <p className="fw-semibold text-uppercase secondColor" style={{ fontSize: '1.25rem' }}>
+    📌 For Job Applications, Please Contact:
+  </p>
+
+  {/* Contact Info - Clean Strip */}
+  <div className="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+    {/* Email */}
+    <div
+      href="mailto:jobs@example.com" 
+      className="d-flex align-items-center text-decoration-none text-dark"
+    >
+      <Mail className="text-primary me-2" size={22} />
+      <span className="fw-semibold">mgmgthantxin@gmail.com</span>
+    </div>
+
+    {/* Divider (only shows on desktop) */}
+    <span className="d-none d-md-block text-muted">|</span>
+
+    {/* Phone */}
+    <div
+      href="tel:+1234567890" 
+      className="d-flex align-items-center text-decoration-none text-dark"
+    >
+      <Phone className="text-success me-2" size={22} />
+      <span className="fw-semibold">09-780407008</span>
+    </div>
+  </div>
+</section>
 
     </div>
   );

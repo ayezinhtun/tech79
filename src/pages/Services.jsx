@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 function Services() {
   const stats = [
     { icon: Clock, value: "Response Time", label: "15-minute response for critical issues, guaranteed" },
-    { icon: Users, value: "Expert Team", label: "Certified professionals with 10+ years average experience" },
+    { icon: Users, value: "Expert Team", label: "Certified professionals with 5+ years average experience" },
     { icon: CircleCheck, value: "Satisfaction", label: "100% satisfaction guarantee or your money back" },
   ];
 
@@ -48,7 +48,7 @@ function Services() {
             Our Services
           </motion.h1>
           <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
-            At Tech79Solutions Company Limited, we provide a comprehensive range of IT services tailored to meet the evolving needs of modern businesses. <br /> Our goal is to ensure reliable, secure, and seamless technology experiences for every client we serve.
+            At Tech79 Solutions Company Limited, we provide a comprehensive range of IT services tailored to meet the evolving needs of modern businesses. <br /> Our goal is to ensure reliable, secure, and seamless technology experiences for every client we serve.
           </p>
         </div>
 

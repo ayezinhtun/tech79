@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand / About */}
           <div className="col-lg-4">
             <div className="d-flex align-items-center mb-3">
-              <h4 className="fw-bold mb-0">Tech79Solutions</h4>
+              <h4 className="fw-bold mb-0">Tech79 Solutions</h4>
             </div>
             <p style={{ lineHeight: "1.8" }}>
              Empowering Your Business with Open Technology
@@ -80,7 +80,7 @@ const Footer = () => {
         <hr className="border-white mt-5" />
         <div className="text-center py-3">
           <p className="mb-0 small">
-            Copyright © 2025 Tech79Solutions
+            Copyright © 2025 Tech 79Solutions
           </p>
         </div>
       </div>

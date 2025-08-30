@@ -15,8 +15,8 @@ function Home() {
       <Hero/>
       <Features/>
       <Services/>
-      <Statistics/>
-      <Partners/>
+      {/* <Statistics/> */}
+      {/* <Partners/> */}
       {/* <Upcoming/> */}
       <CallToAction/>
 

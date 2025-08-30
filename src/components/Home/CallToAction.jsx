@@ -9,7 +9,7 @@ function CallToAction() {
             Ready To Transform Your IT <br /> Infrastructure?
         </h1>
         <p className='secondColor' style={{ lineHeight: 1.625, fontSize: '1.25rem' }}>
-             Join hundreds of satisfied businesses who trust Tech79Solutions for their IT needs. 
+             Join hundreds of satisfied businesses who trust Tech79 Solutions for their IT needs. 
             Get started today with a <br /> free consultation and discover how we can optimize your technology.
         </p>
 

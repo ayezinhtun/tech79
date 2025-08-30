@@ -11,10 +11,10 @@ import energy from '../assets/img/energy.jpg';
 
 function Industries() {
   const stats = [
-    { value: "100+", label: "Trusted Clients" },
+    { value: "50+", label: "Trusted Clients" },
     { value: "5+", label: "Experienced Professionals" },
     { value: "24/7", label: "Support Available" },
-    { value: "99.9%", label: "Uptime Guarantee" },
+    // { value: "99.9%", label: "Uptime Guarantee" },
   ];
 
   const industries = [
@@ -62,7 +62,7 @@ function Industries() {
       <section className="row py-5 text-center" style={{ background: "#1d70b7" }}>
         {stats.map((stat, index) => (
           <motion.div
-            className="col-lg-3 mb-3"
+            className="col-lg-4 mb-3"
             key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
