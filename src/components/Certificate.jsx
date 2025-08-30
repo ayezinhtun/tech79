@@ -10,8 +10,16 @@ import cert3 from "../assets/img/partners/fortinet.png";
 import cert4 from "../assets/img/partners/lenovo.png";
 import cert5 from "../assets/img/partners/paloalto.png";
 import cert6 from "../assets/img/partners/vmware.png";
-import cert7 from "../assets/img/partners/checkpoint.png";
-import cert8 from "../assets/img/partners/checkpoint.png";
+import cert7 from "../assets/img/partners/opnsense.png";
+import cert8 from "../assets/img/partners/HPE.png";
+import cert9 from "../assets/img/partners/zabbix.png";
+import cert10 from "../assets/img/partners/cisco.png";
+import cert11 from "../assets/img/partners/proxmox.png";
+import cert12 from "../assets/img/partners/microsoft.png";
+
+
+
+
 
 // Custom Arrows
 const PrevArrow = ({ onClick }) => (
@@ -27,7 +35,7 @@ const NextArrow = ({ onClick }) => (
 );
 
 function Certificates() {
-  const certificates = [cert1, cert2, cert3, cert4, cert5, cert6, cert7, cert8];
+  const certificates = [cert1, cert2, cert3, cert4, cert5, cert6, cert7, cert8, cert9, cert10, cert11, cert12];
 
   const settings = {
     dots: false,
