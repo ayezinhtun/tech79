@@ -123,8 +123,7 @@ function Contact() {
                   </div>
                   <div>
                     <h5 className="mb-1">Email Support</h5>
-                    <p className="mb-0 secondColor">mgmgthantxin@gmail.com</p>
-                    <p className="mb-0 secondColor">sungehtwe@gmail.com</p>
+                    <p className="mb-0 secondColor">info@tech79solutions.com</p>
                   </div>
                 </div>
 

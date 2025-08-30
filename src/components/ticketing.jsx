@@ -113,8 +113,7 @@ export default function Ticket() {
                   </div>
                   <div>
                     <p className="mb-0 fw-medium fw-bold">Email Support</p>
-                    <p className="mb-0 small text-muted">mgmgthantxin@gmail.com</p>
-                    <p className="mb-0 small text-muted">sungehtwe@gmail.com</p>
+                    <p className="mb-0 small text-muted">info@tech79solutions.com</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center">

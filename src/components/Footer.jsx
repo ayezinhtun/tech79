@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="d-flex align-items-center mb-2">
                 <Mail size={18} className="me-2" />
                 <div>
-                    <div>mgmgthantxin@gmail.com</div> 
+                    <div>info@tech79solutions.com</div> 
                 </div>
             
               </div>

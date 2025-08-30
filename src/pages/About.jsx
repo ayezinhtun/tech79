@@ -307,7 +307,7 @@ function About() {
       className="d-flex align-items-center text-decoration-none text-dark"
     >
       <Mail className="text-primary me-2" size={22} />
-      <span className="fw-semibold">mgmgthantxin@gmail.com</span>
+      <span className="fw-semibold">info@tech79solutions.com</span>
     </div>
 
     {/* Divider (only shows on desktop) */}
